@@ -4,7 +4,7 @@ require '../connection/connection.php';
 $message = $_POST["message"];
 $title = $_POST["title"];
 $path_to_firebase_cm = 'https://fcm.googleapis.com/fcm/send';
-$server_key = "AIzaSyDmciQWqq8hwSW31JJUKfoOj-1Ngpw_a1k";
+$server_key = "YOUR_SERVER_KEY";
 $query = "SELECT * FROM `fcm_info`";
 $res = mysqli_query($con, $query);
 $row = mysqli_fetch_row($res);
